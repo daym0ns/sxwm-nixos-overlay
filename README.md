@@ -27,3 +27,5 @@ outputs =
     }
 
 ```
+
+you can install the packages with pkgs.sxwm and pkgs.sxbar
