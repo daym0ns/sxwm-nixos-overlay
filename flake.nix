@@ -68,8 +68,8 @@ EOF
         buildInputs = [
           prev.xorg.libX11
           prev.xorg.libXcursor
-          prev.libxft.dev
-          prev.fontconfig.dev
+          prev.libxft
+          prev.fontconfig
           prev.freetype
           prev.xorg.libXinerama
         ];
