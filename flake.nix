@@ -67,11 +67,10 @@ EOF
 
         buildInputs = [
           prev.xorg.libX11
-          prev.xorg.libXcursor
+          prev.xorg.libXinerama
           prev.libxft
           prev.fontconfig
           prev.freetype
-          prev.xorg.libXinerama
         ];
 
         makeFlags = [
@@ -82,6 +81,7 @@ EOF
         nativeBuildInputs = [
           prev.gnumake
           prev.libgcc
+          prev.pkg-config
         ];
       };
     };
