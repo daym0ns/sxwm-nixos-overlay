@@ -74,7 +74,10 @@ EOF
           prev.xorg.libXinerama
         ];
 
-        makeFlags = [ "LIBS=-lX11 -lXft -lfontconfig -lfreetype" ];
+        makeFlags = [
+          "CC=${prev.stdenv.cc.targetPrefix}cc"
+          "LIBS=-lX11 -lXft -lfontconfig -lfreetype"
+        ];
 
         nativeBuildInputs = [
           prev.gnumake
