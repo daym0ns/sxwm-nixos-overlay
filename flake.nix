@@ -52,7 +52,7 @@ EOF
       sxbar = prev.stdenv.mkDerivation {
         pname = "sxbar";
         version = "1.0";
-        src = prev.fetchGit {
+        src = prev.fetchgit {
           url = "https://github.com/uint23/sxbar.git";
           rev = "v1.0";
           sha256 = "sha256-wAOTUUpMAnnvFOQKgs7BCAg+CurrpY1bQL8hW3DMPps=";
